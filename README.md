@@ -12,7 +12,7 @@ sd-selfstorage is a comprehensive self-storage rental system for FiveM that allo
 - 📦 **ox_inventory Integration** - Full stash system with weight and slot limits
 
 ## Preview
-![FiveM_GTAProcess_FveXlFEViz](https://github.com/user-attachments/assets/f257685c-04e1-4f95-86cc-3662823833f3)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fd9b534a-89c9-4931-846d-b4d079fa8e7c" />
 ![FiveM_GTAProcess_GMUO1cRVPE](https://github.com/user-attachments/assets/f38e24d3-713d-477b-b1c1-66834e828e3d)
 ![FiveM_GTAProcess_aNNN2aegP8](https://github.com/user-attachments/assets/969b86bc-90b1-4c12-bc24-e291499ef179)
 <img width="1920" height="1080" alt="FiveM_GTAProcess_Wk93zMVrwo" src="https://github.com/user-attachments/assets/2727e1d3-c744-4c35-abb0-5da62e4f332f" />
@@ -97,5 +97,6 @@ This resource is protected by copyright. Redistribution or modification without 
 
 ## 🤝 Support
 For support, join our [Discord](https://discord.gg/FzPehMQaBQ) or create an issue on GitHub.
+
 
 

@@ -95,72 +95,11 @@ Banking.RemoveAccountMoney = function(accountId, amount, unitId)
 end
 ```
 
-### Storage Configuration
-Configure storage units in `config.lua`:
-
-```lua
-Storages = {
-    { 
-        name = 'storageunit1',  
-        id = 1,  
-        coords = vector3(-73.26, -1196.35, 27.66), 
-        length = 5.0, 
-        width = 5.4, 
-        minZ = 25.86, 
-        maxZ = 29.86, 
-        heading = 0 
-    },
-    -- Add more units...
-}
-```
-
-### Pricing Configuration
-```lua
-Pricing = {
-    enableRent = true,  -- Allow renting
-    enableBuy = true,   -- Allow purchasing
-    rent = 1000,        -- Weekly rental price
-    purchase = 25000,   -- One-time purchase price
-    
-    upgrades = {
-        slots_tier1 = {
-            name = "Extra Storage Slots",
-            description = "Increase storage slots by 25",
-            price = 2500,
-            effect = { type = "slots", value = 25 },
-            stackable = true,
-            maxStack = 3
-        },
-        -- Add more upgrades...
-    }
-}
-```
-
-## 📖 Usage
-
-### For Players
-1. **Visit the Storage Manager** - Go to the configured location
-2. **Rent or Buy** - Choose to rent weekly or purchase permanently
-3. **Manage Your Unit**:
-   - Access your storage
-   - Share access with friends
-   - Purchase upgrades
-   - Manage payments (if renting)
-4. **Payment Management** (for rentals):
-   - Enable auto-renewal (if supported)
-   - Make manual payments
-   - View payment status
-
-### Payment System
-- **Early Payment**: Available 24 hours before due
-- **Grace Period**: 48 hours after payment is due
-- **Auto-Renewal**: Automatically deducts from linked bank account
-- **Manual Payment**: Pay using cash or bank
-
 ## 📜 License
 
 This resource is protected by copyright. Redistribution or modification without permission is prohibited.
 
 ## 🤝 Support
+
 
 For support, join our [Discord](https://discord.gg/FzPehMQaBQ) or create an issue on GitHub.

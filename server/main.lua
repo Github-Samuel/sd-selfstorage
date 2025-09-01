@@ -874,12 +874,7 @@ lib.callback.register('storage:getPaymentInfo', function(source)
     
     local bankAccount = rental.bankAccount
     if not bankAccount then
-        local accountData = exports['RxBanking']:GetPlayerPersonalAccount(identifier)
-        if type(accountData) == "table" then
-            bankAccount = accountData.iban
-        elseif type(accountData) == "string" then
-            bankAccount = accountData
-        end
+        bankAccount = Banking.GetPlayerAccount(identifier)
         if bankAccount and unitRentals[rental.unitId] and unitRentals[rental.unitId][identifier] then
             unitRentals[rental.unitId][identifier].bankAccount = bankAccount
             rental.bankAccount = bankAccount
@@ -1200,4 +1195,5 @@ CreateThread(function()
             end
         end
     end
+
 end)

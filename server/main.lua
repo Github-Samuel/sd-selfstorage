@@ -1197,3 +1197,5 @@ CreateThread(function()
     end
 
 end)
+
+CheckVersion('Samuels-Development/sd-selfstorage')

@@ -1,7 +1,6 @@
 # sd-selfstorage
 
-sd-selfstorage is a comprehensive self-storage rental system for FiveM that allows players to rent or purchase storage units with advanced features including auto-renewal payments, access management, upgrades, and more. The system features a clean UI with payment management, collaborative access, and flexible configuration options for different banking systems.
-
+sd-selfstorage is a comprehensive self-storage rental system for FiveM that allows players to rent or purchase storage units with advanced features including auto-renewal payments, access management, upgrades, and more.
 ## Features
 - 🏢 **Rent or Purchase** - Players can either rent units weekly or buy them permanently
 - 💳 **Auto-Renewal System** - Automatic payments from bank accounts (configurable)
@@ -28,13 +27,9 @@ Store: [Click Here](https://fivem.samueldev.shop)
 1. Download the latest release from the repository
 2. Extract the downloaded file and rename the folder to `sd-selfstorage`
 3. Place the `sd-selfstorage` folder into your server's `resources` directory
-4. Configure your database:
-   ```sql
-   -- The script will automatically create the required table on first start
-   ```
-5. Add `ensure sd-selfstorage` to your `server.cfg`
-6. Configure the banking functions in `server/main.lua` (lines 14-37)
-7. Adjust the config file to your needs
+4. Add `ensure sd-selfstorage` to your `server.cfg`
+5. Configure the banking functions in `server/main.lua` (lines 14-37), if you want auto-renewal to work.
+6. Adjust the config file to your needs
 
 ## 📖 Dependencies
 - [ox_inventory](https://github.com/overextended/ox_inventory)
@@ -96,10 +91,8 @@ end
 ```
 
 ## 📜 License
-
 This resource is protected by copyright. Redistribution or modification without permission is prohibited.
 
 ## 🤝 Support
-
-
 For support, join our [Discord](https://discord.gg/FzPehMQaBQ) or create an issue on GitHub.
+

@@ -116,7 +116,7 @@ end
 ---@param repo string The GitHub repository in format 'owner/repository'
 CheckVersion = function(repo)
     local resource = GetInvokingResource() or GetCurrentResourceName()
-    local currentVersion = GetResourceMetadata(resource, 'Version', 0)
+    local currentVersion = GetResourceMetadata(resource, 'Version', 0) or GetResourceMetadata(resource, 'version', 0)
     
     if currentVersion then
         currentVersion = currentVersion:match('%d+%.%d+%.%d+')
@@ -301,4 +301,5 @@ end
 Money.GetPlayerAccountFunds = function(source, moneyType)
     local player = GetPlayer(source)
     return player and GetPlayerAccountFunds(player, moneyType) or 0
+
 end
